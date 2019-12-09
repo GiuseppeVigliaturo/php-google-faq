@@ -19,10 +19,16 @@
     queste domande e risposte con PHP. -->
     <?php
 
-    foreach ($faqs as $key => $value) {
-      echo $value['question']."<br>"."<br>".$value['answer'];
-      echo "<br>";
+    foreach ($faqs as  $faq) {
+      ?>
+      <h1> <?php echo $faq['question']."<br>" ?> </h1>
 
+      <p>
+        <?php echo $faq['answer']."<br>" ?>
+      </p>
+
+      <?php
+      
     }
 
      ?>
